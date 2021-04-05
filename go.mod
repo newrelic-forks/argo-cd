@@ -1,4 +1,5 @@
-module github.com/argoproj/argo-cd
+// module github.com/argoproj/argo-cd
+module github.com/newrelic-forks/argo-cd
 
 go 1.14
 

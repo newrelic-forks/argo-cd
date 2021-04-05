@@ -116,6 +116,7 @@ type client struct {
 	proxyListener   net.Listener
 	proxyServer     *grpc.Server
 	proxyUsersCount int
+	httpClient *http.Client
 }
 
 // NewClient creates a new API client from a set of config options.
@@ -212,6 +213,12 @@ func NewClient(opts *ClientOptions) (Client, error) {
 		}
 	}
 	c.Headers = opts.Headers
+	c.httpClient = &http.Client{
+		Timeout: 30 * time.Second,
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: c.Insecure},
+		},
+	}
 
 	return &c, nil
 }
