@@ -20,7 +20,7 @@ commands:
             # must be configured for tests to run
             git config --global user.email you@example.com
             git config --global user.name "Your Name"
-            echo "export PATH=/home/circleci/.go_workspace/src/github.com/newrelic-forks/argo-cd/hack:\$PATH" | tee -a $BASH_ENV
+            echo "export PATH=/home/circleci/.go_workspace/src/github.com/argoproj/argo-cd/hack:\$PATH" | tee -a $BASH_ENV
             echo "export GIT_ASKPASS=git-ask-pass.sh" | tee -a $BASH_ENV
   setup_go_modules:
     steps:
@@ -65,7 +65,7 @@ jobs:
   build:
     docker:
       - image: argoproj/argocd-test-tools:v0.5.0
-    working_directory: /go/src/github.com/newrelic-forks/argo-cd
+    working_directory: /go/src/github.com/argoproj/argo-cd
     steps:
       - prepare_environment
       - checkout
@@ -77,7 +77,7 @@ jobs:
   codegen:
     docker:
       - image: argoproj/argocd-test-tools:v0.5.0
-    working_directory: /go/src/github.com/newrelic-forks/argo-cd
+    working_directory: /go/src/github.com/argoproj/argo-cd
     steps:
       - prepare_environment
       - checkout
@@ -97,7 +97,7 @@ jobs:
           path: codegen.patch
           destination: .
   test:
-    working_directory: /go/src/github.com/newrelic-forks/argo-cd
+    working_directory: /go/src/github.com/argoproj/argo-cd
     docker:
       - image: argoproj/argocd-test-tools:v0.5.0
     steps:
@@ -122,7 +122,7 @@ jobs:
           destination: .
   
   lint:
-    working_directory: /go/src/github.com/newrelic-forks/argo-cd
+    working_directory: /go/src/github.com/argoproj/argo-cd
     docker:
       - image: argoproj/argocd-test-tools:v0.5.0
     steps:
@@ -150,11 +150,11 @@ jobs:
             fi
 
   sonarcloud:
-    working_directory: /go/src/github.com/newrelic-forks/argo-cd
+    working_directory: /go/src/github.com/argoproj/argo-cd
     docker:
       - image: argoproj/argocd-test-tools:v0.5.0
     environment:
-      NODE_MODULES: /go/src/github.com/newrelic-forks/argo-cd/ui/node_modules
+      NODE_MODULES: /go/src/github.com/argoproj/argo-cd/ui/node_modules
     steps:
       - prepare_environment
       - checkout
@@ -191,8 +191,8 @@ jobs:
             fi
 
             # Explicitly set NODE_MODULES
-            export NODE_MODULES=/go/src/github.com/newrelic-forks/argo-cd/ui/node_modules
-            export NODE_PATH=/go/src/github.com/newrelic-forks/argo-cd/ui/node_modules
+            export NODE_MODULES=/go/src/github.com/argoproj/argo-cd/ui/node_modules
+            export NODE_PATH=/go/src/github.com/argoproj/argo-cd/ui/node_modules
 
             $SCANNER_DIRECTORY/sonar-scanner-$VERSION-$OS/bin/sonar-scanner
           name: SonarCloud
@@ -202,7 +202,7 @@ jobs:
             - /tmp/cache/scanner
     
   e2e:
-    working_directory: /home/circleci/.go_workspace/src/github.com/newrelic-forks/argo-cd
+    working_directory: /home/circleci/.go_workspace/src/github.com/argoproj/argo-cd
     machine:
       image: ubuntu-1604:201903-01
     environment:

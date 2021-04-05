@@ -73,7 +73,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create symlink in GOPATH
-        run: ln -s $(pwd) ~/go/src/github.com/newrelic-forks/argo-cd
+        run: ln -s $(pwd) ~/go/src/github.com/argoproj/argo-cd
       - name: Setup Golang
         uses: actions/setup-go@v1
         with:
@@ -143,12 +143,12 @@ jobs:
           # We need to vendor go modules for codegen yet
           go mod download
           go mod vendor -v
-        working-directory: /home/runner/go/src/github.com/newrelic-forks/argo-cd
+        working-directory: /home/runner/go/src/github.com/argoproj/argo-cd
       - name: Install toolchain for codegen
         run: |
           make install-codegen-tools-local
           make install-go-tools-local
-        working-directory: /home/runner/go/src/github.com/newrelic-forks/argo-cd
+        working-directory: /home/runner/go/src/github.com/argoproj/argo-cd
       - name: Initialize local Helm
         run: |
           helm2 init --client-only
@@ -157,12 +157,12 @@ jobs:
           set -x
           export GOPATH=$(go env GOPATH)
           make codegen-local
-        working-directory: /home/runner/go/src/github.com/newrelic-forks/argo-cd
+        working-directory: /home/runner/go/src/github.com/argoproj/argo-cd
       - name: Check nothing has changed
         run: |
           set -xo pipefail
           git diff --exit-code -- . ':!go.sum' ':!go.mod' ':!assets/swagger.json' | tee codegen.patch
-        working-directory: /home/runner/go/src/github.com/newrelic-forks/argo-cd
+        working-directory: /home/runner/go/src/github.com/argoproj/argo-cd
 
   build-ui:
     name: Build, test & lint UI code

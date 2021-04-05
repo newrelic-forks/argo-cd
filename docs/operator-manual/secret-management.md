@@ -13,4 +13,4 @@ Argo CD is un-opinionated about how secrets are managed. There's many ways to do
 * [KSOPS](https://github.com/viaduct-ai/kustomize-sops#argo-cd-integration)
 
 
-For discussion, see [#1364](https://github.com/newrelic-forks/argo-cd/issues/1364)
+For discussion, see [#1364](https://github.com/argoproj/argo-cd/issues/1364)

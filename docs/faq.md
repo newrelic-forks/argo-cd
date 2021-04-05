@@ -19,13 +19,13 @@ Argo CD provides health for several standard Kubernetes types. The `Ingress` and
 to return `Progressing` state instead of `Healthy`.
 
 * `Ingress` is considered healthy if `status.loadBalancer.ingress` list is non-empty, with at least one value for `hostname` or `IP`. Some ingress controllers
- ([contour](https://github.com/heptio/contour/issues/403), [traefik](https://github.com/newrelic-forks/argo-cd/issues/968#issuecomment-451082913)) don't update
+ ([contour](https://github.com/heptio/contour/issues/403), [traefik](https://github.com/argoproj/argo-cd/issues/968#issuecomment-451082913)) don't update
  `status.loadBalancer.ingress` field which causes `Ingress` to stuck in `Progressing` state forever.
 
 * `StatefulSet` is considered healthy if value of `status.updatedReplicas` field matches to `spec.replicas` field. Due to Kubernetes bug
 [kubernetes/kubernetes#68573](https://github.com/kubernetes/kubernetes/issues/68573) the `status.updatedReplicas` is not populated. So unless you run Kubernetes version which
 include the fix [kubernetes/kubernetes#67570](https://github.com/kubernetes/kubernetes/pull/67570) `StatefulSet` might stay in `Progressing` state.
-* Your `StatefulSet` or `DaemonSet` is using `OnDelete` instead of `RollingUpdate` strategy. See [#1881](https://github.com/newrelic-forks/argo-cd/issues/1881).
+* Your `StatefulSet` or `DaemonSet` is using `OnDelete` instead of `RollingUpdate` strategy. See [#1881](https://github.com/argoproj/argo-cd/issues/1881).
 
 As workaround Argo CD allows providing [health check](operator-manual/health.md) customization which overrides default behavior.
 
@@ -102,7 +102,7 @@ Argo CD automatically sets the `app.kubernetes.io/instance` label and uses it to
 !!! note 
     When you make this change your applications will become out of sync and will need re-syncing.
 
-See [#1482](https://github.com/newrelic-forks/argo-cd/issues/1482).
+See [#1482](https://github.com/argoproj/argo-cd/issues/1482).
 
 ## Why Are My Resource Limits Out Of Sync?
 
@@ -127,7 +127,7 @@ You can get the list of groups by opening "developer tools -> network"
 
 Decode the token at https://jwt.io/. That will provide the list of teams that you can remove yourself from.
 
-See [#2165](https://github.com/newrelic-forks/argo-cd/issues/2165).
+See [#2165](https://github.com/argoproj/argo-cd/issues/2165).
 
 ## Why Am I Getting `rpc error: code = Unavailable desc = transport is closing` When Using The CLI?
 

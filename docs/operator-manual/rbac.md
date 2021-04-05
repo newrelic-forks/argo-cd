@@ -12,7 +12,7 @@ Argo CD has two pre-defined roles but RBAC configuration allows defining roles a
 * `role:readonly` - read-only access to all resources
 * `role:admin` - unrestricted access to all resources
 
-These default built-in role definitions can be seen in [builtin-policy.csv](https://github.com/newrelic-forks/argo-cd/blob/master/assets/builtin-policy.csv)
+These default built-in role definitions can be seen in [builtin-policy.csv](https://github.com/argoproj/argo-cd/blob/master/assets/builtin-policy.csv)
 
 ### RBAC Permission Structure
 

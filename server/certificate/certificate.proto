@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/newrelic-forks/argo-cd/pkg/apiclient/certificate";
+option go_package = "github.com/argoproj/argo-cd/pkg/apiclient/certificate";
 
 // Certificate Service
 //
@@ -9,7 +9,7 @@ package certificate;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1/generated.proto";
+import "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1/generated.proto";
 
 // Message to query the server for configured repository certificates
 message RepositoryCertificateQuery {

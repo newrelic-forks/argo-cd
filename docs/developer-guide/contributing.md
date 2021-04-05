@@ -89,9 +89,9 @@ Whenever you develop a new feature or submit a bug fix, please also write approp
 If you want to see how much coverage just a specific module (i.e. your new one) has, you can set the `TEST_MODULE` to the (fully qualified) name of that module with `make test`, i.e.
 
 ```bash
- make test TEST_MODULE=github.com/newrelic-forks/argo-cd/server/cache
+ make test TEST_MODULE=github.com/argoproj/argo-cd/server/cache
 ...
-ok      github.com/newrelic-forks/argo-cd/server/cache        0.029s  coverage: 89.3% of statements
+ok      github.com/argoproj/argo-cd/server/cache        0.029s  coverage: 89.3% of statements
 ```
 
 ## Local vs Virtualized toolchain
@@ -127,7 +127,7 @@ The following steps are required no matter whether you chose to use a virtualize
 
 ### Optional: Setup an additional Git remote
 
-While everyone has their own Git workflow, the author of this document recommends to create a remote called `upstream` in your local copy pointing to the original ArgoCD repository. This way, you can easily keep your local branches up-to-date by merging in latest changes from the ArgoCD repository, i.e. by doing a `git pull upstream master` in your locally checked out branch. To create the remote, run `git remote add upstream https://github.com/newrelic-forks/argo-cd`
+While everyone has their own Git workflow, the author of this document recommends to create a remote called `upstream` in your local copy pointing to the original ArgoCD repository. This way, you can easily keep your local branches up-to-date by merging in latest changes from the ArgoCD repository, i.e. by doing a `git pull upstream master` in your locally checked out branch. To create the remote, run `git remote add upstream https://github.com/argoproj/argo-cd`
 
 ### Install the must-have requirements
 

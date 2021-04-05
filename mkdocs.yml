@@ -1,5 +1,5 @@
 site_name: Argo CD - Declarative GitOps CD for Kubernetes
-repo_url: https://github.com/newrelic-forks/argo-cd
+repo_url: https://github.com/argoproj/argo-cd
 strict: true
 theme:
   name: material
@@ -90,6 +90,6 @@ nav:
   - faq.md
   - security_considerations.md
   - Support: SUPPORT.md
-  - Releases ⧉: https://github.com/newrelic-forks/argo-cd/releases
-  - Roadmap ⧉: https://github.com/newrelic-forks/argo-cd/milestones
+  - Releases ⧉: https://github.com/argoproj/argo-cd/releases
+  - Roadmap ⧉: https://github.com/argoproj/argo-cd/milestones
   - Blog ⧉: https://blog.argoproj.io/

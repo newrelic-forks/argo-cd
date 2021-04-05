@@ -65,7 +65,7 @@ NOTE: as a security measure you don't have access to most of the standard Lua li
 
 ### Way 2. Contribute a Custom Health Check
 
-A health check can be bundled into Argo CD. Custom health check scripts are located in the `resource_customizations` directory of [https://github.com/newrelic-forks/argo-cd](https://github.com/newrelic-forks/argo-cd). This must have the following directory structure:
+A health check can be bundled into Argo CD. Custom health check scripts are located in the `resource_customizations` directory of [https://github.com/argoproj/argo-cd](https://github.com/argoproj/argo-cd). This must have the following directory structure:
 
 ```
 argo-cd
@@ -87,4 +87,4 @@ tests:
   inputPath: testdata/test-resource-definition.yaml
 ```
 
-The [PR#1139](https://github.com/newrelic-forks/argo-cd/pull/1139) is an example of Cert Manager CRDs custom health check.
+The [PR#1139](https://github.com/argoproj/argo-cd/pull/1139) is an example of Cert Manager CRDs custom health check.

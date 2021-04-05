@@ -41,7 +41,7 @@ customizations, custom resource health checks, and more.
 
 ### Other
 
-* New Project and Application CRD settings ([#2900](https://github.com/newrelic-forks/argo-cd/issues/2900), [#2873](https://github.com/newrelic-forks/argo-cd/issues/2873)) that allows customizing Argo CD behavior.
+* New Project and Application CRD settings ([#2900](https://github.com/argoproj/argo-cd/issues/2900), [#2873](https://github.com/argoproj/argo-cd/issues/2873)) that allows customizing Argo CD behavior.
 * Upgraded Dex (v2.22.0) enables seamless [SSO integration](https://www.openshift.com/blog/openshift-authentication-integration-with-argocd) with Openshift.
 
 
@@ -124,8 +124,8 @@ Following enhancement were implemented in addition to Helm 3:
  huge performance boost and significantly less Kubernetes API server load.
 
  The Argo CD controller Prometheus metrics have been reworked to enable a richer Grafana dashboard.
- The improved dashboard is available at [examples/dashboard.json](https://github.com/newrelic-forks/argo-cd/blob/master/examples/dashboard.json).
- You can set `ARGOCD_LEGACY_CONTROLLER_METRICS=true` environment variable and use [examples/dashboard-legacy.json](https://github.com/newrelic-forks/argo-cd/blob/master/examples/dashboard-legacy.json)
+ The improved dashboard is available at [examples/dashboard.json](https://github.com/argoproj/argo-cd/blob/master/examples/dashboard.json).
+ You can set `ARGOCD_LEGACY_CONTROLLER_METRICS=true` environment variable and use [examples/dashboard-legacy.json](https://github.com/argoproj/argo-cd/blob/master/examples/dashboard-legacy.json)
  to keep using old dashboard.
 
 #### Local accounts
@@ -140,7 +140,7 @@ As part of this release, the bundled Redis was upgraded to version 4.3.4 with en
 The HA proxy replaced the sentinel and provides more reliable Redis connection.
 
 > After publishing 1.5.0 release we've discovered that default HAProxy settings might cause intermittent failures.
-> See [argo-cd#3358](https://github.com/newrelic-forks/argo-cd/issues/3358)
+> See [argo-cd#3358](https://github.com/argoproj/argo-cd/issues/3358)
 
 #### Windows CLI
 
@@ -151,15 +151,15 @@ in the release details page as well as on the Argo CD Help page.
 
 The `argocd_app_sync_status`, `argocd_app_health_status` and `argocd_app_created_time` prometheus metrics are deprecated in favor of additional labels
 to `argocd_app_info` metric. The deprecated labels are still available can be re-enabled using `ARGOCD_LEGACY_CONTROLLER_METRICS=true` environment variable.
-The legacy example Grafana dashboard is available at [examples/dashboard-legacy.json](https://github.com/newrelic-forks/argo-cd/blob/master/examples/dashboard-legacy.json). 
+The legacy example Grafana dashboard is available at [examples/dashboard-legacy.json](https://github.com/argoproj/argo-cd/blob/master/examples/dashboard-legacy.json). 
 
 ####  Known issues
 Last-minute bugs that will be addressed in 1.5.1 shortly:
  
-* https://github.com/newrelic-forks/argo-cd/issues/3336
-* https://github.com/newrelic-forks/argo-cd/issues/3319
-* https://github.com/newrelic-forks/argo-cd/issues/3339
-* https://github.com/newrelic-forks/argo-cd/issues/3358
+* https://github.com/argoproj/argo-cd/issues/3336
+* https://github.com/argoproj/argo-cd/issues/3319
+* https://github.com/argoproj/argo-cd/issues/3339
+* https://github.com/argoproj/argo-cd/issues/3358
 
 #### Enhancements
 * feat: support helm3 (#2383) (#3178)
@@ -588,8 +588,8 @@ There may be instances when you want to control the times during which an Argo C
 
 The Server Certificate And Known Hosts Management feature makes it really easy to connect private Git repositories to Argo CD. Now Argo CD provides UI and CLI which
 enables managing certificates and known hosts which are used to access Git repositories. It is also possible to configure both hosts and certificates in a declarative manner using
-[argocd-ssh-known-hosts-cm](https://github.com/newrelic-forks/argo-cd/blob/master/docs/operator-manual/argocd-ssh-known-hosts-cm.yaml) and 
-[argocd-tls-certs-cm.yaml](https://github.com/newrelic-forks/argo-cd/blob/master/docs/operator-manual/argocd-tls-certs-cm.yaml) config maps.
+[argocd-ssh-known-hosts-cm](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/argocd-ssh-known-hosts-cm.yaml) and 
+[argocd-tls-certs-cm.yaml](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/argocd-tls-certs-cm.yaml) config maps.
 
 #### Self-Healing
 
@@ -717,36 +717,36 @@ systems by making it easier to find other components inside and outside Argo CD.
 
 #### Enhancements
 
-- Sync waves [#1544](https://github.com/newrelic-forks/argo-cd/issues/1544)
-- Adds Prune=false and IgnoreExtraneous options [#1629](https://github.com/newrelic-forks/argo-cd/issues/1629)
-- Forward Git credentials to config management plugins [#1628](https://github.com/newrelic-forks/argo-cd/issues/1628)
-- Improve Kustomize 2 parameters UI [#1609](https://github.com/newrelic-forks/argo-cd/issues/1609)
-- Adds `argocd logout` [#1210](https://github.com/newrelic-forks/argo-cd/issues/1210)
-- Make it possible to set Helm release name different from Argo CD app name.  [#1066](https://github.com/newrelic-forks/argo-cd/issues/1066)
-- Add ability to specify system namespace during cluster add operation [#1661](https://github.com/newrelic-forks/argo-cd/pull/1661) 
-- Make listener and metrics ports configurable [#1647](https://github.com/newrelic-forks/argo-cd/pull/1647) 
-- Using SSH keys to authenticate kustomize bases from git [#827](https://github.com/newrelic-forks/argo-cd/issues/827)
-- Adds `argocd app sync APPNAME --async` [#1728](https://github.com/newrelic-forks/argo-cd/issues/1728)
-- Allow users to define app specific urls to expose in the UI [#1677](https://github.com/newrelic-forks/argo-cd/issues/1677)
-- Error view instead of blank page in UI [#1375](https://github.com/newrelic-forks/argo-cd/issues/1375)
-- Project Editor: Whitelisted Cluster Resources doesn't strip whitespace [#1693](https://github.com/newrelic-forks/argo-cd/issues/1693)
+- Sync waves [#1544](https://github.com/argoproj/argo-cd/issues/1544)
+- Adds Prune=false and IgnoreExtraneous options [#1629](https://github.com/argoproj/argo-cd/issues/1629)
+- Forward Git credentials to config management plugins [#1628](https://github.com/argoproj/argo-cd/issues/1628)
+- Improve Kustomize 2 parameters UI [#1609](https://github.com/argoproj/argo-cd/issues/1609)
+- Adds `argocd logout` [#1210](https://github.com/argoproj/argo-cd/issues/1210)
+- Make it possible to set Helm release name different from Argo CD app name.  [#1066](https://github.com/argoproj/argo-cd/issues/1066)
+- Add ability to specify system namespace during cluster add operation [#1661](https://github.com/argoproj/argo-cd/pull/1661) 
+- Make listener and metrics ports configurable [#1647](https://github.com/argoproj/argo-cd/pull/1647) 
+- Using SSH keys to authenticate kustomize bases from git [#827](https://github.com/argoproj/argo-cd/issues/827)
+- Adds `argocd app sync APPNAME --async` [#1728](https://github.com/argoproj/argo-cd/issues/1728)
+- Allow users to define app specific urls to expose in the UI [#1677](https://github.com/argoproj/argo-cd/issues/1677)
+- Error view instead of blank page in UI [#1375](https://github.com/argoproj/argo-cd/issues/1375)
+- Project Editor: Whitelisted Cluster Resources doesn't strip whitespace [#1693](https://github.com/argoproj/argo-cd/issues/1693)
 - Eliminate unnecessary git interactions for top-level resource changes (#1919)
 - Ability to rotate the bearer token used to manage external clusters (#1084)
 
 #### Bug Fixes
 
-- Project Editor: Whitelisted Cluster Resources doesn't strip whitespace [#1693](https://github.com/newrelic-forks/argo-cd/issues/1693)
-- \[ui small bug\] menu position outside block [#1711](https://github.com/newrelic-forks/argo-cd/issues/1711)
-- UI will crash when create application without destination namespace [#1701](https://github.com/newrelic-forks/argo-cd/issues/1701)
-- ArgoCD synchronization failed due to internal error [#1697](https://github.com/newrelic-forks/argo-cd/issues/1697)
-- Replicasets ordering is not stable on app tree view [#1668](https://github.com/newrelic-forks/argo-cd/issues/1668)
-- Stuck processor on App Controller after deleting application with incomplete operation [#1665](https://github.com/newrelic-forks/argo-cd/issues/1665)
-- Role edit page fails with JS error [#1662](https://github.com/newrelic-forks/argo-cd/issues/1662)
-- failed parsing on parameters with comma [#1660](https://github.com/newrelic-forks/argo-cd/issues/1660)
-- Handle nil obj when processing custom actions [#1700](https://github.com/newrelic-forks/argo-cd/pull/1700)
-- Account for missing fields in Rollout HealthStatus [#1699](https://github.com/newrelic-forks/argo-cd/pull/1699) 
-- Sync operation unnecessary waits for a healthy state of all resources [#1715](https://github.com/newrelic-forks/argo-cd/issues/1715)
-- failed parsing on parameters with comma [#1660](https://github.com/newrelic-forks/argo-cd/issues/1660)
+- Project Editor: Whitelisted Cluster Resources doesn't strip whitespace [#1693](https://github.com/argoproj/argo-cd/issues/1693)
+- \[ui small bug\] menu position outside block [#1711](https://github.com/argoproj/argo-cd/issues/1711)
+- UI will crash when create application without destination namespace [#1701](https://github.com/argoproj/argo-cd/issues/1701)
+- ArgoCD synchronization failed due to internal error [#1697](https://github.com/argoproj/argo-cd/issues/1697)
+- Replicasets ordering is not stable on app tree view [#1668](https://github.com/argoproj/argo-cd/issues/1668)
+- Stuck processor on App Controller after deleting application with incomplete operation [#1665](https://github.com/argoproj/argo-cd/issues/1665)
+- Role edit page fails with JS error [#1662](https://github.com/argoproj/argo-cd/issues/1662)
+- failed parsing on parameters with comma [#1660](https://github.com/argoproj/argo-cd/issues/1660)
+- Handle nil obj when processing custom actions [#1700](https://github.com/argoproj/argo-cd/pull/1700)
+- Account for missing fields in Rollout HealthStatus [#1699](https://github.com/argoproj/argo-cd/pull/1699) 
+- Sync operation unnecessary waits for a healthy state of all resources [#1715](https://github.com/argoproj/argo-cd/issues/1715)
+- failed parsing on parameters with comma [#1660](https://github.com/argoproj/argo-cd/issues/1660)
 - argocd app sync hangs when cluster is not configured (#1935)
 - Do not allow app-of-app child app's Missing status to affect parent (#1954)
 - Argo CD don't handle well k8s objects which size exceeds 1mb (#1685)
@@ -776,7 +776,7 @@ systems by making it easier to find other components inside and outside Argo CD.
 * [narg95](https://github.com/narg95)
 * [Simon Behar](https://github.com/simster7)
 
-See also [milestone v1.1](https://github.com/newrelic-forks/argo-cd/milestone/13)
+See also [milestone v1.1](https://github.com/argoproj/argo-cd/milestone/13)
 
 ## v1.0.0 (2019-05-16)
 

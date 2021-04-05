@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/newrelic-forks/argo-cd.git
+    repoURL: https://github.com/argoproj/argo-cd.git
     targetRevision: HEAD
     path: self-managed-app
 

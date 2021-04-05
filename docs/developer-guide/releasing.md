@@ -46,7 +46,7 @@ Git uses it as comment char. To solve this, temporarily switch Git comment char
 to something else, the `;` character is recommended.
 
 For example, considering you have configured the Git remote for repository to
-`github.com/newrelic-forks/argo-cd` to be named `upstream` and are in your locally
+`github.com/argoproj/argo-cd` to be named `upstream` and are in your locally
 checked out repo:
 
 ```shell
@@ -115,7 +115,7 @@ After the automatic release creation has finished, you should perform manual
 checks to see if the release came out correctly:
 
 * Check status & output of the GitHub action
-* Check [https://github.com/newrelic-forks/argo-cd/releases](https://github.com/newrelic-forks/argo-cd/releases)
+* Check [https://github.com/argoproj/argo-cd/releases](https://github.com/argoproj/argo-cd/releases)
   to see if release has been correctly created, and if all required assets
   are attached.
 * Check whether the image has been published on DockerHub correctly
@@ -192,7 +192,7 @@ git push $REPO $BRANCH
 git push $REPO $VERSION
 ```
 
-Update [Github releases](https://github.com/newrelic-forks/argo-cd/releases) with:
+Update [Github releases](https://github.com/argoproj/argo-cd/releases) with:
 
 * Getting started (copy from previous release)
 * Changelog
