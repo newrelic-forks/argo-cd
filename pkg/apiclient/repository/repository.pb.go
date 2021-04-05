@@ -10,10 +10,10 @@ package repository
 import (
 	context "context"
 	fmt "fmt"
-	v1alpha1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	apiclient "github.com/argoproj/argo-cd/reposerver/apiclient"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
+	v1alpha1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	apiclient "github.com/newrelic-forks/argo-cd/reposerver/apiclient"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

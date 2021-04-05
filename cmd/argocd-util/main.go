@@ -26,12 +26,12 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/cmd/argocd-util/commands"
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/util/cli"
-	"github.com/argoproj/argo-cd/util/db"
-	"github.com/argoproj/argo-cd/util/dex"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/cmd/argocd-util/commands"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/util/cli"
+	"github.com/newrelic-forks/argo-cd/util/db"
+	"github.com/newrelic-forks/argo-cd/util/dex"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 
 	// load the gcp plugin (required to authenticate against GKE clusters).
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"

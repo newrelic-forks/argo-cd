@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/argoproj/argo-cd/util/lua"
+	"github.com/newrelic-forks/argo-cd/util/lua"
 )
 
 type TestStructure struct {

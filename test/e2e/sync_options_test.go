@@ -6,7 +6,7 @@ import (
 
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
 )
 
 // TestSyncOptionsValidateFalse verifies we can disable validation during kubectl apply, using the
@@ -20,7 +20,7 @@ func TestSyncOptionsValidateFalse(t *testing.T) {
 		Then().
 		Expect(OperationPhaseIs(OperationSucceeded))
 	// NOTE: it is a bug that we do not detect this as OutOfSync. This is because we
-	// are dropping fields as part of remarshalling. See: https://github.com/argoproj/argo-cd/issues/1787
+	// are dropping fields as part of remarshalling. See: https://github.com/newrelic-forks/argo-cd/issues/1787
 	// Expect(SyncStatusIs(SyncStatusCodeOutOfSync))
 }
 

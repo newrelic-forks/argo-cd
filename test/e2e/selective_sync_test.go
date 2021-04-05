@@ -6,8 +6,8 @@ import (
 	"github.com/argoproj/gitops-engine/pkg/health"
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
+	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
 )
 
 // when you selectively sync, only selected resources should be synced, but the app will be out of sync

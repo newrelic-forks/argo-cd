@@ -13,13 +13,13 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/reposerver"
-	reposervercache "github.com/argoproj/argo-cd/reposerver/cache"
-	"github.com/argoproj/argo-cd/reposerver/metrics"
-	cacheutil "github.com/argoproj/argo-cd/util/cache"
-	"github.com/argoproj/argo-cd/util/cli"
-	"github.com/argoproj/argo-cd/util/tls"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/reposerver"
+	reposervercache "github.com/newrelic-forks/argo-cd/reposerver/cache"
+	"github.com/newrelic-forks/argo-cd/reposerver/metrics"
+	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
+	"github.com/newrelic-forks/argo-cd/util/cli"
+	"github.com/newrelic-forks/argo-cd/util/tls"
 )
 
 const (

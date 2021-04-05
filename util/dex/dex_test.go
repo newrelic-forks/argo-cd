@@ -11,8 +11,8 @@ import (
 	"github.com/ghodss/yaml"
 	"github.com/stretchr/testify/assert"
 
-	// "github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/util/settings"
+	// "github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 const invalidURL = ":://localhost/foo/bar"

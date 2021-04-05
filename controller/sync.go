@@ -14,12 +14,12 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/argoproj/argo-cd/controller/metrics"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	listersv1alpha1 "github.com/argoproj/argo-cd/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/util/argo"
-	"github.com/argoproj/argo-cd/util/lua"
-	"github.com/argoproj/argo-cd/util/rand"
+	"github.com/newrelic-forks/argo-cd/controller/metrics"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	listersv1alpha1 "github.com/newrelic-forks/argo-cd/pkg/client/listers/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/util/argo"
+	"github.com/newrelic-forks/argo-cd/util/lua"
+	"github.com/newrelic-forks/argo-cd/util/rand"
 )
 
 var syncIdPrefix uint64 = 0

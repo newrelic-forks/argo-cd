@@ -11,8 +11,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/fields"
 
-	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
 )
 
 type state = string

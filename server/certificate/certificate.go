@@ -3,12 +3,12 @@ package certificate
 import (
 	"golang.org/x/net/context"
 
-	certificatepkg "github.com/argoproj/argo-cd/pkg/apiclient/certificate"
-	appsv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/util/db"
-	"github.com/argoproj/argo-cd/util/rbac"
+	certificatepkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/certificate"
+	appsv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
+	"github.com/newrelic-forks/argo-cd/util/db"
+	"github.com/newrelic-forks/argo-cd/util/rbac"
 )
 
 // Server provides a Certificate service

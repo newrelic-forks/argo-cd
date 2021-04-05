@@ -25,12 +25,12 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/util/argo/normalizers"
-	"github.com/argoproj/argo-cd/util/cli"
-	"github.com/argoproj/argo-cd/util/lua"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/util/argo/normalizers"
+	"github.com/newrelic-forks/argo-cd/util/cli"
+	"github.com/newrelic-forks/argo-cd/util/lua"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 type settingsOpts struct {

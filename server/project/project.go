@@ -18,16 +18,16 @@ import (
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/pkg/apiclient/project"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
-	"github.com/argoproj/argo-cd/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/util"
-	"github.com/argoproj/argo-cd/util/argo"
-	jwtutil "github.com/argoproj/argo-cd/util/jwt"
-	"github.com/argoproj/argo-cd/util/rbac"
-	"github.com/argoproj/argo-cd/util/session"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/project"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
+	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
+	"github.com/newrelic-forks/argo-cd/util"
+	"github.com/newrelic-forks/argo-cd/util/argo"
+	jwtutil "github.com/newrelic-forks/argo-cd/util/jwt"
+	"github.com/newrelic-forks/argo-cd/util/rbac"
+	"github.com/newrelic-forks/argo-cd/util/session"
 )
 
 const (

@@ -5,11 +5,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/argoproj/argo-cd/pkg/apiclient"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/argoproj/argo-cd/util/localconfig"
+	"github.com/newrelic-forks/argo-cd/util/localconfig"
 )
 
 func TestLogout(t *testing.T) {

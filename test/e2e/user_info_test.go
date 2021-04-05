@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture"
 )
 
 func TestUserInfo(t *testing.T) {

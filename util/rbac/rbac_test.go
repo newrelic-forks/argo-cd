@@ -12,7 +12,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/argoproj/argo-cd/util/assets"
+	"github.com/newrelic-forks/argo-cd/util/assets"
 )
 
 const (
@@ -230,15 +230,15 @@ func TestURLAsObjectName(t *testing.T) {
 	assert.Nil(t, err)
 	policy := `
 p, alice, repositories, *, foo/*, allow
-p, bob, repositories, *, foo/https://github.com/argoproj/argo-cd.git, allow
+p, bob, repositories, *, foo/https://github.com/newrelic-forks/argo-cd.git, allow
 p, cathy, repositories, *, foo/*, allow
 `
 	_ = enf.SetUserPolicy(policy)
 
-	assert.True(t, enf.Enforce("alice", "repositories", "delete", "foo/https://github.com/argoproj/argo-cd.git"))
+	assert.True(t, enf.Enforce("alice", "repositories", "delete", "foo/https://github.com/newrelic-forks/argo-cd.git"))
 	assert.True(t, enf.Enforce("alice", "repositories", "delete", "foo/https://github.com/golang/go.git"))
 
-	assert.True(t, enf.Enforce("bob", "repositories", "delete", "foo/https://github.com/argoproj/argo-cd.git"))
+	assert.True(t, enf.Enforce("bob", "repositories", "delete", "foo/https://github.com/newrelic-forks/argo-cd.git"))
 	assert.False(t, enf.Enforce("bob", "repositories", "delete", "foo/https://github.com/golang/go.git"))
 
 }

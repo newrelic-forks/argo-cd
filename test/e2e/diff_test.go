@@ -5,9 +5,9 @@ import (
 
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
-	"github.com/argoproj/argo-cd/test/fixture/test"
+	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
+	"github.com/newrelic-forks/argo-cd/test/fixture/test"
 )
 
 func TestPatch(t *testing.T) {

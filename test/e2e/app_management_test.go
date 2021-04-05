@@ -29,14 +29,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/utils/pointer"
 
-	"github.com/argoproj/argo-cd/common"
-	applicationpkg "github.com/argoproj/argo-cd/pkg/apiclient/application"
-	repositorypkg "github.com/argoproj/argo-cd/pkg/apiclient/repository"
-	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	. "github.com/argoproj/argo-cd/test/e2e/fixture"
-	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
-	. "github.com/argoproj/argo-cd/util/argo"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/common"
+	applicationpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/application"
+	repositorypkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/repository"
+	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
+	. "github.com/newrelic-forks/argo-cd/util/argo"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 const (

@@ -17,11 +17,11 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/common"
-	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
-	clusterpkg "github.com/argoproj/argo-cd/pkg/apiclient/cluster"
-	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/util/clusterauth"
+	"github.com/newrelic-forks/argo-cd/common"
+	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
+	clusterpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/cluster"
+	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/util/clusterauth"
 )
 
 // NewClusterCommand returns a new instance of an `argocd cluster` command

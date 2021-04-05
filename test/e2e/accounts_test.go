@@ -10,9 +10,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
-	"github.com/argoproj/argo-cd/pkg/apiclient/session"
-	. "github.com/argoproj/argo-cd/test/e2e/fixture"
+	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture"
 )
 
 func TestCreateAndUseAccount(t *testing.T) {

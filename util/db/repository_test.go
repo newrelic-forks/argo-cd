@@ -3,17 +3,17 @@ package db
 import (
 	"testing"
 
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 func TestRepoURLToSecretName(t *testing.T) {
 	tables := map[string]string{
-		"git://git@github.com:argoproj/ARGO-cd.git": "repo-83273445",
-		"https://github.com/argoproj/ARGO-cd":       "repo-1890113693",
-		"https://github.com/argoproj/argo-cd":       "repo-42374749",
-		"https://github.com/argoproj/argo-cd.git":   "repo-821842295",
-		"https://github.com/argoproj/argo_cd.git":   "repo-1049844989",
-		"ssh://git@github.com/argoproj/argo-cd.git": "repo-3569564120",
+		"git://git@github.com:argoproj/ARGO-cd.git":       "repo-83273445",
+		"https://github.com/newrelic-forks/argo-cd":       "repo-1890113693",
+		"https://github.com/newrelic-forks/argo-cd":       "repo-42374749",
+		"https://github.com/newrelic-forks/argo-cd.git":   "repo-821842295",
+		"https://github.com/argoproj/argo_cd.git":         "repo-1049844989",
+		"ssh://git@github.com/newrelic-forks/argo-cd.git": "repo-3569564120",
 	}
 
 	for k, v := range tables {

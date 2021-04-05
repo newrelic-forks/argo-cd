@@ -22,7 +22,7 @@ import (
 	"k8s.io/klog"
 	"k8s.io/kubectl/pkg/util/term"
 
-	"github.com/argoproj/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/common"
 )
 
 // NewVersionCmd returns a new `version` command to be used as a sub-command to root

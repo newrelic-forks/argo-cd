@@ -14,10 +14,10 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/argoproj/argo-cd/common"
-	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/test"
+	"github.com/newrelic-forks/argo-cd/common"
+	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	"github.com/newrelic-forks/argo-cd/test"
 )
 
 // TestCompareAppStateEmpty tests comparison when both git and live have no objects

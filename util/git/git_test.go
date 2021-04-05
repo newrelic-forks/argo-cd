@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/argoproj/argo-cd/test/fixture/log"
-	"github.com/argoproj/argo-cd/test/fixture/path"
-	"github.com/argoproj/argo-cd/test/fixture/test"
+	"github.com/newrelic-forks/argo-cd/test/fixture/log"
+	"github.com/newrelic-forks/argo-cd/test/fixture/path"
+	"github.com/newrelic-forks/argo-cd/test/fixture/test"
 )
 
 func TestIsCommitSHA(t *testing.T) {
@@ -193,7 +193,7 @@ func TestCustomHTTPClient(t *testing.T) {
 }
 
 func TestLsRemote(t *testing.T) {
-	clnt, err := NewClientExt("https://github.com/argoproj/argo-cd.git", "/tmp", NopCreds{}, false, false)
+	clnt, err := NewClientExt("https://github.com/newrelic-forks/argo-cd.git", "/tmp", NopCreds{}, false, false)
 	assert.NoError(t, err)
 	xpass := []string{
 		"HEAD",

@@ -5,11 +5,11 @@ import (
 	"github.com/golang/protobuf/ptypes/empty"
 	"golang.org/x/net/context"
 
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/pkg/apiclient/version"
-	"github.com/argoproj/argo-cd/util/helm"
-	ksutil "github.com/argoproj/argo-cd/util/ksonnet"
-	"github.com/argoproj/argo-cd/util/kustomize"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/version"
+	"github.com/newrelic-forks/argo-cd/util/helm"
+	ksutil "github.com/newrelic-forks/argo-cd/util/ksonnet"
+	"github.com/newrelic-forks/argo-cd/util/kustomize"
 )
 
 type Server struct {

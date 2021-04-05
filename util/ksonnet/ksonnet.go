@@ -14,7 +14,7 @@ import (
 	"github.com/ghodss/yaml"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
 )
 
 // Destination returns the deployment destination for an environment in app spec data

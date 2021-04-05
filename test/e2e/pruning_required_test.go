@@ -5,7 +5,7 @@ import (
 
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
+	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
 )
 
 // check we fail with message if we delete a non-prunable resource

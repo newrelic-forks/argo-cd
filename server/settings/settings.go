@@ -4,11 +4,11 @@ import (
 	"github.com/ghodss/yaml"
 	"golang.org/x/net/context"
 
-	sessionmgr "github.com/argoproj/argo-cd/util/session"
+	sessionmgr "github.com/newrelic-forks/argo-cd/util/session"
 
-	settingspkg "github.com/argoproj/argo-cd/pkg/apiclient/settings"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/util/settings"
+	settingspkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/settings"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 // Server provides a Settings service

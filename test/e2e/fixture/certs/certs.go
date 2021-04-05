@@ -7,7 +7,7 @@ import (
 
 	"github.com/argoproj/gitops-engine/pkg/utils/errors"
 
-	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
 )
 
 // Add a custom CA certificate to the test and also create the certificate file

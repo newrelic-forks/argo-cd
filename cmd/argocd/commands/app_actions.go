@@ -14,8 +14,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
-	applicationpkg "github.com/argoproj/argo-cd/pkg/apiclient/application"
+	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
+	applicationpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/application"
 )
 
 type DisplayedAction struct {

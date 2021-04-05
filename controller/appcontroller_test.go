@@ -23,16 +23,16 @@ import (
 	kubetesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/argoproj/argo-cd/common"
-	mockstatecache "github.com/argoproj/argo-cd/controller/cache/mocks"
-	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/reposerver/apiclient"
-	mockrepoclient "github.com/argoproj/argo-cd/reposerver/apiclient/mocks"
-	"github.com/argoproj/argo-cd/test"
-	cacheutil "github.com/argoproj/argo-cd/util/cache"
-	appstatecache "github.com/argoproj/argo-cd/util/cache/appstate"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/common"
+	mockstatecache "github.com/newrelic-forks/argo-cd/controller/cache/mocks"
+	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	mockrepoclient "github.com/newrelic-forks/argo-cd/reposerver/apiclient/mocks"
+	"github.com/newrelic-forks/argo-cd/test"
+	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
+	appstatecache "github.com/newrelic-forks/argo-cd/util/cache/appstate"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 type namespacedResource struct {

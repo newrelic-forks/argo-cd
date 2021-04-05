@@ -16,16 +16,16 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/util/cache/appstate"
-	"github.com/argoproj/argo-cd/util/dex"
-	"github.com/argoproj/argo-cd/util/env"
-	httputil "github.com/argoproj/argo-cd/util/http"
-	jwtutil "github.com/argoproj/argo-cd/util/jwt"
-	oidcutil "github.com/argoproj/argo-cd/util/oidc"
-	passwordutil "github.com/argoproj/argo-cd/util/password"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
+	"github.com/newrelic-forks/argo-cd/util/cache/appstate"
+	"github.com/newrelic-forks/argo-cd/util/dex"
+	"github.com/newrelic-forks/argo-cd/util/env"
+	httputil "github.com/newrelic-forks/argo-cd/util/http"
+	jwtutil "github.com/newrelic-forks/argo-cd/util/jwt"
+	oidcutil "github.com/newrelic-forks/argo-cd/util/oidc"
+	passwordutil "github.com/newrelic-forks/argo-cd/util/password"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 // SessionManager generates and validates JWT tokens for login sessions.

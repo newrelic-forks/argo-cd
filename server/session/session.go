@@ -7,9 +7,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/pkg/apiclient/session"
-	"github.com/argoproj/argo-cd/server/rbacpolicy"
-	sessionmgr "github.com/argoproj/argo-cd/util/session"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
+	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
+	sessionmgr "github.com/newrelic-forks/argo-cd/util/session"
 )
 
 // Server provides a Session service

@@ -11,9 +11,9 @@ import (
 	"github.com/argoproj/gitops-engine/pkg/utils/errors"
 	argoio "github.com/argoproj/gitops-engine/pkg/utils/io"
 
-	"github.com/argoproj/argo-cd/common"
-	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
-	"github.com/argoproj/argo-cd/pkg/apiclient/version"
+	"github.com/newrelic-forks/argo-cd/common"
+	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/version"
 )
 
 // NewVersionCmd returns a new `version` command to be used as a sub-command to root

@@ -20,13 +20,13 @@ import (
 	testcore "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
 
-	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/pkg/client/informers/externalversions/application/v1alpha1"
-	applisters "github.com/argoproj/argo-cd/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/reposerver/apiclient/mocks"
-	dbmocks "github.com/argoproj/argo-cd/util/db/mocks"
+	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
+	"github.com/newrelic-forks/argo-cd/pkg/client/informers/externalversions/application/v1alpha1"
+	applisters "github.com/newrelic-forks/argo-cd/pkg/client/listers/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient/mocks"
+	dbmocks "github.com/newrelic-forks/argo-cd/util/db/mocks"
 )
 
 func TestRefreshApp(t *testing.T) {
@@ -153,7 +153,7 @@ func TestNilOutZerValueAppSources(t *testing.T) {
 
 func TestValidatePermissionsEmptyDestination(t *testing.T) {
 	conditions, err := ValidatePermissions(context.Background(), &argoappv1.ApplicationSpec{
-		Source: argoappv1.ApplicationSource{RepoURL: "https://github.com/argoproj/argo-cd", Path: "."},
+		Source: argoappv1.ApplicationSource{RepoURL: "https://github.com/newrelic-forks/argo-cd", Path: "."},
 	}, &argoappv1.AppProject{
 		Spec: argoappv1.AppProjectSpec{
 			SourceRepos:  []string{"*"},

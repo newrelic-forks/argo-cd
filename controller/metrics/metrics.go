@@ -13,10 +13,10 @@ import (
 	log "github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/labels"
 
-	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	applister "github.com/argoproj/argo-cd/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/util/git"
-	"github.com/argoproj/argo-cd/util/healthz"
+	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	applister "github.com/newrelic-forks/argo-cd/pkg/client/listers/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/util/git"
+	"github.com/newrelic-forks/argo-cd/util/healthz"
 )
 
 type MetricsServer struct {

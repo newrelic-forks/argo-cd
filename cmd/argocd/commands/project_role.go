@@ -12,9 +12,9 @@ import (
 	timeutil "github.com/argoproj/pkg/time"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
-	projectpkg "github.com/argoproj/argo-cd/pkg/apiclient/project"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
+	projectpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/project"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
 )
 
 const (

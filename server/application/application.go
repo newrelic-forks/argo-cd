@@ -34,24 +34,24 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/utils/pointer"
 
-	"github.com/argoproj/argo-cd/pkg/apiclient/application"
-	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	appv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
-	applisters "github.com/argoproj/argo-cd/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/reposerver/apiclient"
-	servercache "github.com/argoproj/argo-cd/server/cache"
-	"github.com/argoproj/argo-cd/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/util"
-	"github.com/argoproj/argo-cd/util/argo"
-	argoutil "github.com/argoproj/argo-cd/util/argo"
-	"github.com/argoproj/argo-cd/util/db"
-	"github.com/argoproj/argo-cd/util/git"
-	"github.com/argoproj/argo-cd/util/helm"
-	"github.com/argoproj/argo-cd/util/lua"
-	"github.com/argoproj/argo-cd/util/rbac"
-	"github.com/argoproj/argo-cd/util/session"
-	"github.com/argoproj/argo-cd/util/settings"
+	"github.com/newrelic-forks/argo-cd/pkg/apiclient/application"
+	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	appv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
+	applisters "github.com/newrelic-forks/argo-cd/pkg/client/listers/application/v1alpha1"
+	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	servercache "github.com/newrelic-forks/argo-cd/server/cache"
+	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
+	"github.com/newrelic-forks/argo-cd/util"
+	"github.com/newrelic-forks/argo-cd/util/argo"
+	argoutil "github.com/newrelic-forks/argo-cd/util/argo"
+	"github.com/newrelic-forks/argo-cd/util/db"
+	"github.com/newrelic-forks/argo-cd/util/git"
+	"github.com/newrelic-forks/argo-cd/util/helm"
+	"github.com/newrelic-forks/argo-cd/util/lua"
+	"github.com/newrelic-forks/argo-cd/util/rbac"
+	"github.com/newrelic-forks/argo-cd/util/session"
+	"github.com/newrelic-forks/argo-cd/util/settings"
 )
 
 // Server provides a Application service
@@ -605,7 +605,7 @@ func (s *Server) Watch(q *application.ApplicationQuery, ws application.Applicati
 		// If resourceVersion is not supplied, we need to get latest version of the apps by first
 		// making a list request, which we then supply to the watch request. We always need to
 		// supply a resourceVersion to watch requests since without it, the return values may return
-		// stale data. See: https://github.com/argoproj/argo-cd/issues/1605
+		// stale data. See: https://github.com/newrelic-forks/argo-cd/issues/1605
 		appsList, err := s.appclientset.ArgoprojV1alpha1().Applications(s.ns).List(listOpts)
 		if err != nil {
 			return err

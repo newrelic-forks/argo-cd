@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	helm "github.com/argoproj/argo-cd/util/helm"
+	helm "github.com/newrelic-forks/argo-cd/util/helm"
 
 	io "github.com/argoproj/gitops-engine/pkg/utils/io"
 
