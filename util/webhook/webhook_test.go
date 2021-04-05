@@ -10,8 +10,8 @@ import (
 	"github.com/sirupsen/logrus/hooks/test"
 	"github.com/stretchr/testify/assert"
 
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 func NewMockHandler() *ArgoCDWebhookHandler {

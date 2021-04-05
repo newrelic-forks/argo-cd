@@ -18,7 +18,7 @@ import (
 
 	"golang.org/x/crypto/ssh"
 
-	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/argoproj/argo-cd/common"
 )
 
 // A struct representing an entry in the list of SSH known hosts.

@@ -6,9 +6,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
+	"github.com/argoproj/argo-cd/util/settings"
 
 	"github.com/argoproj/gitops-engine/pkg/health"
 	"github.com/stretchr/testify/assert"

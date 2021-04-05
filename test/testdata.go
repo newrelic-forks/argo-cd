@@ -8,10 +8,10 @@ import (
 
 	"github.com/argoproj/gitops-engine/pkg/utils/testing"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	apps "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
-	appinformer "github.com/newrelic-forks/argo-cd/pkg/client/informers/externalversions"
-	applister "github.com/newrelic-forks/argo-cd/pkg/client/listers/application/v1alpha1"
+	"github.com/argoproj/argo-cd/common"
+	apps "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
+	appinformer "github.com/argoproj/argo-cd/pkg/client/informers/externalversions"
+	applister "github.com/argoproj/argo-cd/pkg/client/listers/application/v1alpha1"
 )
 
 const (

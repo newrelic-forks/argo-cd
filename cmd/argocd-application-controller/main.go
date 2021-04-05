@@ -20,15 +20,15 @@ import (
 	// load the oidc plugin (required to authenticate with OpenID Connect).
 	_ "k8s.io/client-go/plugin/pkg/client/auth/oidc"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/controller"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
-	appstatecache "github.com/newrelic-forks/argo-cd/util/cache/appstate"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/controller"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	cacheutil "github.com/argoproj/argo-cd/util/cache"
+	appstatecache "github.com/argoproj/argo-cd/util/cache/appstate"
+	"github.com/argoproj/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 const (

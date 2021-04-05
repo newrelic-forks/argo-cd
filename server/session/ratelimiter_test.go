@@ -7,7 +7,7 @@ import (
 	util "github.com/argoproj/gitops-engine/pkg/utils/io"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/newrelic-forks/argo-cd/util/session"
+	"github.com/argoproj/argo-cd/util/session"
 )
 
 type fakeStorage struct {

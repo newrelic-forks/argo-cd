@@ -13,13 +13,13 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient/cluster"
-	appv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	servercache "github.com/newrelic-forks/argo-cd/server/cache"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/util/clusterauth"
-	"github.com/newrelic-forks/argo-cd/util/db"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/pkg/apiclient/cluster"
+	appv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	servercache "github.com/argoproj/argo-cd/server/cache"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/util/clusterauth"
+	"github.com/argoproj/argo-cd/util/db"
+	"github.com/argoproj/argo-cd/util/rbac"
 )
 
 // Server provides a Cluster service

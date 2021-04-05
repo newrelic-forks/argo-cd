@@ -5,8 +5,8 @@ import (
 
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
+	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
 )
 
 func TestCanAccessInsecureSSHRepo(t *testing.T) {

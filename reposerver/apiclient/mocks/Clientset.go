@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	apiclient "github.com/newrelic-forks/argo-cd/reposerver/apiclient"
+	apiclient "github.com/argoproj/argo-cd/reposerver/apiclient"
 
 	io "github.com/argoproj/gitops-engine/pkg/utils/io"
 	mock "github.com/stretchr/testify/mock"

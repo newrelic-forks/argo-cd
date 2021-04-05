@@ -15,10 +15,10 @@ import (
 	"gopkg.in/go-playground/webhooks.v5/gogs"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
-	"github.com/newrelic-forks/argo-cd/util/argo"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
+	"github.com/argoproj/argo-cd/util/argo"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 type ArgoCDWebhookHandler struct {

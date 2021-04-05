@@ -6,7 +6,7 @@ import (
 	. "github.com/argoproj/gitops-engine/pkg/utils/testing"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/newrelic-forks/argo-cd/test"
+	"github.com/argoproj/argo-cd/test"
 )
 
 func TestGetRevision(t *testing.T) {

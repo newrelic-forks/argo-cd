@@ -7,8 +7,8 @@ import (
 	"github.com/go-redis/redis"
 	"github.com/spf13/cobra"
 
-	appv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
+	appv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	cacheutil "github.com/argoproj/argo-cd/util/cache"
 )
 
 var ErrCacheMiss = cacheutil.ErrCacheMiss

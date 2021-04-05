@@ -12,9 +12,9 @@ import (
 	"github.com/argoproj/gitops-engine/pkg/utils/io"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	projectpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/project"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	projectpkg "github.com/argoproj/argo-cd/pkg/apiclient/project"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
 )
 
 // NewProjectWindowsCommand returns a new instance of the `argocd proj windows` command

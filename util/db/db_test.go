@@ -15,9 +15,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 const (
@@ -90,10 +90,10 @@ func TestCreateRepoCredentials(t *testing.T) {
 	assert.Nil(t, secret.Data[sshPrivateKey])
 
 	created, err := db.CreateRepository(context.Background(), &v1alpha1.Repository{
-		Repo: "https://github.com/newrelic-forks/argo-cd",
+		Repo: "https://github.com/argoproj/argo-cd",
 	})
 	assert.Nil(t, err)
-	assert.Equal(t, "https://github.com/newrelic-forks/argo-cd", created.Repo)
+	assert.Equal(t, "https://github.com/argoproj/argo-cd", created.Repo)
 
 	// There seems to be a race or some other hiccup in the fake K8s clientset used for this test.
 	// Just give it a little time to settle.

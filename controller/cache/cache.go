@@ -16,11 +16,11 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/newrelic-forks/argo-cd/controller/metrics"
-	appv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/db"
-	"github.com/newrelic-forks/argo-cd/util/lua"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/controller/metrics"
+	appv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/db"
+	"github.com/argoproj/argo-cd/util/lua"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 type LiveStateCache interface {

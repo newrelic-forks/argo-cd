@@ -7,11 +7,11 @@ import (
 	"github.com/go-redis/redis"
 	"github.com/spf13/cobra"
 
-	appv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
-	appstatecache "github.com/newrelic-forks/argo-cd/util/cache/appstate"
-	"github.com/newrelic-forks/argo-cd/util/oidc"
-	"github.com/newrelic-forks/argo-cd/util/session"
+	appv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	cacheutil "github.com/argoproj/argo-cd/util/cache"
+	appstatecache "github.com/argoproj/argo-cd/util/cache/appstate"
+	"github.com/argoproj/argo-cd/util/oidc"
+	"github.com/argoproj/argo-cd/util/session"
 )
 
 var ErrCacheMiss = appstatecache.ErrCacheMiss

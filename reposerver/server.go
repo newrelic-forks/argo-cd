@@ -3,14 +3,14 @@ package reposerver
 import (
 	"crypto/tls"
 
-	versionpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/version"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	reposervercache "github.com/newrelic-forks/argo-cd/reposerver/cache"
-	"github.com/newrelic-forks/argo-cd/reposerver/metrics"
-	"github.com/newrelic-forks/argo-cd/reposerver/repository"
-	"github.com/newrelic-forks/argo-cd/server/version"
-	grpc_util "github.com/newrelic-forks/argo-cd/util/grpc"
-	tlsutil "github.com/newrelic-forks/argo-cd/util/tls"
+	versionpkg "github.com/argoproj/argo-cd/pkg/apiclient/version"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	reposervercache "github.com/argoproj/argo-cd/reposerver/cache"
+	"github.com/argoproj/argo-cd/reposerver/metrics"
+	"github.com/argoproj/argo-cd/reposerver/repository"
+	"github.com/argoproj/argo-cd/server/version"
+	grpc_util "github.com/argoproj/argo-cd/util/grpc"
+	tlsutil "github.com/argoproj/argo-cd/util/tls"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_logrus "github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus"

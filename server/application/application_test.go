@@ -25,21 +25,21 @@ import (
 	k8scache "k8s.io/client-go/tools/cache"
 	"k8s.io/utils/pointer"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient/application"
-	appsv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	apps "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
-	appinformer "github.com/newrelic-forks/argo-cd/pkg/client/informers/externalversions"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient/mocks"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/test"
-	"github.com/newrelic-forks/argo-cd/util"
-	"github.com/newrelic-forks/argo-cd/util/assets"
-	"github.com/newrelic-forks/argo-cd/util/cache"
-	"github.com/newrelic-forks/argo-cd/util/db"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apiclient/application"
+	appsv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	apps "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
+	appinformer "github.com/argoproj/argo-cd/pkg/client/informers/externalversions"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	"github.com/argoproj/argo-cd/reposerver/apiclient/mocks"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/test"
+	"github.com/argoproj/argo-cd/util"
+	"github.com/argoproj/argo-cd/util/assets"
+	"github.com/argoproj/argo-cd/util/cache"
+	"github.com/argoproj/argo-cd/util/db"
+	"github.com/argoproj/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 const (
@@ -325,7 +325,7 @@ func TestSyncAndTerminate(t *testing.T) {
 	ctx := context.Background()
 	appServer := newTestAppServer()
 	testApp := newTestApp()
-	testApp.Spec.Source.RepoURL = "https://github.com/newrelic-forks/argo-cd.git"
+	testApp.Spec.Source.RepoURL = "https://github.com/argoproj/argo-cd.git"
 	createReq := application.ApplicationCreateRequest{
 		Application: *testApp,
 	}

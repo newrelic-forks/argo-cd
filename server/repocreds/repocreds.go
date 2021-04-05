@@ -7,13 +7,13 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	repocredspkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/repocreds"
-	appsv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/util/db"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	repocredspkg "github.com/argoproj/argo-cd/pkg/apiclient/repocreds"
+	appsv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/util/db"
+	"github.com/argoproj/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 // Server provides a Repository service

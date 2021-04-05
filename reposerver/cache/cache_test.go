@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
+	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	cacheutil "github.com/argoproj/argo-cd/util/cache"
 )
 
 type fixtures struct {

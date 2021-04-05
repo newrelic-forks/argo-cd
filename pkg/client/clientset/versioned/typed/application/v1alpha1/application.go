@@ -5,8 +5,8 @@ package v1alpha1
 import (
 	"time"
 
-	v1alpha1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	scheme "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	scheme "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

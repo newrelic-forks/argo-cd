@@ -5,10 +5,10 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/tools/clientcmd"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	"github.com/newrelic-forks/argo-cd/util/config"
-	"github.com/newrelic-forks/argo-cd/util/localconfig"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	"github.com/argoproj/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/util/config"
+	"github.com/argoproj/argo-cd/util/localconfig"
 )
 
 func init() {

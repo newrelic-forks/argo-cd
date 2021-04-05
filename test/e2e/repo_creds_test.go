@@ -6,8 +6,8 @@ import (
 
 	. "github.com/argoproj/gitops-engine/pkg/utils/errors"
 
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
+	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
 )
 
 // make sure you cannot create an app from a private repo without set-up

@@ -3,7 +3,7 @@ package util_test
 import (
 	"testing"
 
-	"github.com/newrelic-forks/argo-cd/util"
+	"github.com/argoproj/argo-cd/util"
 )
 
 func TestMakeSignature(t *testing.T) {

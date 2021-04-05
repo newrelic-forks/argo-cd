@@ -12,10 +12,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/fields"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	"github.com/newrelic-forks/argo-cd/util/argo"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	"github.com/argoproj/argo-cd/util/argo"
 )
 
 func assertProjHasEvent(t *testing.T, a *v1alpha1.AppProject, message string, reason string) {
@@ -45,7 +45,7 @@ func TestProjectCreation(t *testing.T) {
 		"--description", "Test description",
 		"-d", "https://192.168.99.100:8443,default",
 		"-d", "https://192.168.99.100:8443,service",
-		"-s", "https://github.com/newrelic-forks/argo-cd.git",
+		"-s", "https://github.com/argoproj/argo-cd.git",
 		"--orphaned-resources")
 	assert.Nil(t, err)
 
@@ -61,7 +61,7 @@ func TestProjectCreation(t *testing.T) {
 	assert.Equal(t, "service", proj.Spec.Destinations[1].Namespace)
 
 	assert.Equal(t, 1, len(proj.Spec.SourceRepos))
-	assert.Equal(t, "https://github.com/newrelic-forks/argo-cd.git", proj.Spec.SourceRepos[0])
+	assert.Equal(t, "https://github.com/argoproj/argo-cd.git", proj.Spec.SourceRepos[0])
 
 	assert.NotNil(t, proj.Spec.OrphanedResources)
 	assert.True(t, proj.Spec.OrphanedResources.IsWarn())
@@ -223,13 +223,13 @@ func TestAddProjectSource(t *testing.T) {
 		t.Fatalf("Unable to create project %v", err)
 	}
 
-	_, err = fixture.RunCli("proj", "add-source", projectName, "https://github.com/newrelic-forks/argo-cd.git")
+	_, err = fixture.RunCli("proj", "add-source", projectName, "https://github.com/argoproj/argo-cd.git")
 
 	if err != nil {
 		t.Fatalf("Unable to add project source %v", err)
 	}
 
-	_, err = fixture.RunCli("proj", "add-source", projectName, "https://github.com/newrelic-forks/argo-cd.git")
+	_, err = fixture.RunCli("proj", "add-source", projectName, "https://github.com/argoproj/argo-cd.git")
 	assert.Nil(t, err)
 
 	proj, err := fixture.AppClientset.ArgoprojV1alpha1().AppProjects(fixture.ArgoCDNamespace).Get(projectName, metav1.GetOptions{})
@@ -237,7 +237,7 @@ func TestAddProjectSource(t *testing.T) {
 	assert.Equal(t, projectName, proj.Name)
 	assert.Equal(t, 1, len(proj.Spec.SourceRepos))
 
-	assert.Equal(t, "https://github.com/newrelic-forks/argo-cd.git", proj.Spec.SourceRepos[0])
+	assert.Equal(t, "https://github.com/argoproj/argo-cd.git", proj.Spec.SourceRepos[0])
 }
 
 func TestRemoveProjectSource(t *testing.T) {
@@ -247,17 +247,17 @@ func TestRemoveProjectSource(t *testing.T) {
 	_, err := fixture.AppClientset.ArgoprojV1alpha1().AppProjects(fixture.ArgoCDNamespace).Create(&v1alpha1.AppProject{
 		ObjectMeta: metav1.ObjectMeta{Name: projectName},
 		Spec: v1alpha1.AppProjectSpec{
-			SourceRepos: []string{"https://github.com/newrelic-forks/argo-cd.git"},
+			SourceRepos: []string{"https://github.com/argoproj/argo-cd.git"},
 		},
 	})
 
 	assert.NoError(t, err)
 
-	_, err = fixture.RunCli("proj", "remove-source", projectName, "https://github.com/newrelic-forks/argo-cd.git")
+	_, err = fixture.RunCli("proj", "remove-source", projectName, "https://github.com/argoproj/argo-cd.git")
 
 	assert.NoError(t, err)
 
-	_, err = fixture.RunCli("proj", "remove-source", projectName, "https://github.com/newrelic-forks/argo-cd.git")
+	_, err = fixture.RunCli("proj", "remove-source", projectName, "https://github.com/argoproj/argo-cd.git")
 	assert.NoError(t, err)
 
 	proj, err := fixture.AppClientset.ArgoprojV1alpha1().AppProjects(fixture.ArgoCDNamespace).Get(projectName, metav1.GetOptions{})

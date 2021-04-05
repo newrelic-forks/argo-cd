@@ -22,7 +22,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 
-	"github.com/newrelic-forks/argo-cd/util"
+	"github.com/argoproj/argo-cd/util"
 )
 
 var (

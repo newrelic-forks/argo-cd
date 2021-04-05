@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
+	"github.com/argoproj/argo-cd/pkg/apiclient/session"
 
 	"google.golang.org/grpc/metadata"
 
@@ -20,15 +20,15 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	applicationpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/application"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	apps "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/fake"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/test"
-	"github.com/newrelic-forks/argo-cd/util/assets"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apiclient"
+	applicationpkg "github.com/argoproj/argo-cd/pkg/apiclient/application"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	apps "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/fake"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/test"
+	"github.com/argoproj/argo-cd/util/assets"
+	"github.com/argoproj/argo-cd/util/rbac"
 )
 
 func fakeServer() *ArgoCDServer {

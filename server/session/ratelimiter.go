@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/newrelic-forks/argo-cd/util/session"
+	"github.com/argoproj/argo-cd/util/session"
 
 	util "github.com/argoproj/gitops-engine/pkg/utils/io"
 	"github.com/bsm/redislock"

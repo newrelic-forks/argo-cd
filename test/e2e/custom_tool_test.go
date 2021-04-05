@@ -11,9 +11,9 @@ import (
 	. "github.com/argoproj/gitops-engine/pkg/utils/errors"
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
+	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
 )
 
 // make sure we can echo back the Git creds

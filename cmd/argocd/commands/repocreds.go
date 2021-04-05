@@ -12,11 +12,11 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	repocredspkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/repocreds"
-	appsv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	"github.com/newrelic-forks/argo-cd/util/git"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	repocredspkg "github.com/argoproj/argo-cd/pkg/apiclient/repocreds"
+	appsv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/util/git"
 )
 
 // NewRepoCredsCommand returns a new instance of an `argocd repocreds` command

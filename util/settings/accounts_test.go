@@ -10,7 +10,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/argoproj/argo-cd/common"
 )
 
 func TestGetAccounts_NoAccountsConfigured(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"github.com/go-redis/redis"
 	"github.com/spf13/cobra"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/util/env"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/util/env"
 )
 
 const (

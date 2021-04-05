@@ -24,14 +24,14 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	sessionpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
-	grpcutil "github.com/newrelic-forks/argo-cd/util/grpc"
-	"github.com/newrelic-forks/argo-cd/util/rand"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/common"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	sessionpkg "github.com/argoproj/argo-cd/pkg/apiclient/session"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
+	grpcutil "github.com/argoproj/argo-cd/util/grpc"
+	"github.com/argoproj/argo-cd/util/rand"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 const (

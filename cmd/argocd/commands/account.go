@@ -18,13 +18,13 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/crypto/ssh/terminal"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	accountpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/account"
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	"github.com/newrelic-forks/argo-cd/util/localconfig"
-	sessionutil "github.com/newrelic-forks/argo-cd/util/session"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	accountpkg "github.com/argoproj/argo-cd/pkg/apiclient/account"
+	"github.com/argoproj/argo-cd/pkg/apiclient/session"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/util/localconfig"
+	sessionutil "github.com/argoproj/argo-cd/util/session"
 )
 
 func NewAccountCommand(clientOpts *argocdclient.ClientOptions) *cobra.Command {

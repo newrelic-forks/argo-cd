@@ -7,11 +7,11 @@ import (
 	argoio "github.com/argoproj/gitops-engine/pkg/utils/io"
 	"github.com/stretchr/testify/assert"
 
-	repositorypkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/repository"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture/repos"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	repositorypkg "github.com/argoproj/argo-cd/pkg/apiclient/repository"
+	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	"github.com/argoproj/argo-cd/test/e2e/fixture/app"
+	"github.com/argoproj/argo-cd/test/e2e/fixture/repos"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 func TestAddRemovePublicRepo(t *testing.T) {

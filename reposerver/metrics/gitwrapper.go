@@ -1,6 +1,6 @@
 package metrics
 
-import "github.com/newrelic-forks/argo-cd/util/git"
+import "github.com/argoproj/argo-cd/util/git"
 
 type gitClientWrapper struct {
 	repo          string

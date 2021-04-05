@@ -9,10 +9,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/test"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/common"
+	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/test"
+	"github.com/argoproj/argo-cd/util/rbac"
 )
 
 func newFakeProj() *argoappv1.AppProject {

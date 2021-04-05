@@ -9,8 +9,8 @@ import (
 	"github.com/argoproj/pkg/exec"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/git"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/git"
 )
 
 const kustomization1 = "kustomization_yaml"

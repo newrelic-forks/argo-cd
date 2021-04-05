@@ -11,7 +11,7 @@ import (
 	executil "github.com/argoproj/gitops-engine/pkg/utils/exec"
 	"github.com/ghodss/yaml"
 
-	"github.com/newrelic-forks/argo-cd/util/config"
+	"github.com/argoproj/argo-cd/util/config"
 )
 
 type HelmRepository struct {

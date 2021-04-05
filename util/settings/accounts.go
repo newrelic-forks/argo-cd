@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc/status"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/newrelic-forks/argo-cd/common"
+	"github.com/argoproj/argo-cd/common"
 )
 
 const (

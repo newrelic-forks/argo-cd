@@ -15,12 +15,12 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	. "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture"
-	. "github.com/newrelic-forks/argo-cd/test/e2e/fixture/app"
-	"github.com/newrelic-forks/argo-cd/test/e2e/fixture/repos"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	. "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture"
+	. "github.com/argoproj/argo-cd/test/e2e/fixture/app"
+	"github.com/argoproj/argo-cd/test/e2e/fixture/repos"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 func TestHelmHooksAreCreated(t *testing.T) {

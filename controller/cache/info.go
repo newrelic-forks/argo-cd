@@ -10,8 +10,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	k8snode "k8s.io/kubernetes/pkg/util/node"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/resource"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/resource"
 )
 
 func populateNodeInfo(un *unstructured.Unstructured, res *ResourceInfo) {

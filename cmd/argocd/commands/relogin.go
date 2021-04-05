@@ -11,10 +11,10 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	settingspkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/settings"
-	"github.com/newrelic-forks/argo-cd/util/localconfig"
-	"github.com/newrelic-forks/argo-cd/util/session"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	settingspkg "github.com/argoproj/argo-cd/pkg/apiclient/settings"
+	"github.com/argoproj/argo-cd/util/localconfig"
+	"github.com/argoproj/argo-cd/util/session"
 )
 
 // NewReloginCommand returns a new instance of `argocd relogin` command

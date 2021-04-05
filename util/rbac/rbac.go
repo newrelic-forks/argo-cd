@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/newrelic-forks/argo-cd/util/assets"
+	"github.com/argoproj/argo-cd/util/assets"
 
 	"github.com/casbin/casbin"
 	"github.com/casbin/casbin/model"

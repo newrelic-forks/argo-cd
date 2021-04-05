@@ -9,9 +9,9 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	"github.com/newrelic-forks/argo-cd/test"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	"github.com/argoproj/argo-cd/test"
 )
 
 func TestPersistRevisionHistory(t *testing.T) {

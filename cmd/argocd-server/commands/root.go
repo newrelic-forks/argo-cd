@@ -13,16 +13,16 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	"github.com/newrelic-forks/argo-cd/server"
-	servercache "github.com/newrelic-forks/argo-cd/server/cache"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	"github.com/newrelic-forks/argo-cd/util/env"
-	"github.com/newrelic-forks/argo-cd/util/kube"
-	"github.com/newrelic-forks/argo-cd/util/tls"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	"github.com/argoproj/argo-cd/server"
+	servercache "github.com/argoproj/argo-cd/server/cache"
+	"github.com/argoproj/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/util/env"
+	"github.com/argoproj/argo-cd/util/kube"
+	"github.com/argoproj/argo-cd/util/tls"
 )
 
 const (

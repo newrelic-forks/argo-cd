@@ -13,13 +13,13 @@ import (
 	"google.golang.org/grpc/status"
 	"k8s.io/kubernetes/pkg/util/slice"
 
-	"github.com/newrelic-forks/argo-cd/common"
-	"github.com/newrelic-forks/argo-cd/pkg/apiclient/account"
-	"github.com/newrelic-forks/argo-cd/server/rbacpolicy"
-	"github.com/newrelic-forks/argo-cd/util/password"
-	"github.com/newrelic-forks/argo-cd/util/rbac"
-	"github.com/newrelic-forks/argo-cd/util/session"
-	"github.com/newrelic-forks/argo-cd/util/settings"
+	"github.com/argoproj/argo-cd/common"
+	"github.com/argoproj/argo-cd/pkg/apiclient/account"
+	"github.com/argoproj/argo-cd/server/rbacpolicy"
+	"github.com/argoproj/argo-cd/util/password"
+	"github.com/argoproj/argo-cd/util/rbac"
+	"github.com/argoproj/argo-cd/util/session"
+	"github.com/argoproj/argo-cd/util/settings"
 )
 
 // Server provides a Session service

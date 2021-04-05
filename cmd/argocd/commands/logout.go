@@ -8,8 +8,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	"github.com/newrelic-forks/argo-cd/util/localconfig"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	"github.com/argoproj/argo-cd/util/localconfig"
 )
 
 // NewLogoutCommand returns a new instance of `argocd logout` command

@@ -18,15 +18,15 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	argoappv1 "github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/reposerver/apiclient"
-	"github.com/newrelic-forks/argo-cd/reposerver/cache"
-	"github.com/newrelic-forks/argo-cd/reposerver/metrics"
-	cacheutil "github.com/newrelic-forks/argo-cd/util/cache"
-	"github.com/newrelic-forks/argo-cd/util/git"
-	gitmocks "github.com/newrelic-forks/argo-cd/util/git/mocks"
-	"github.com/newrelic-forks/argo-cd/util/helm"
-	helmmocks "github.com/newrelic-forks/argo-cd/util/helm/mocks"
+	argoappv1 "github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	"github.com/argoproj/argo-cd/reposerver/apiclient"
+	"github.com/argoproj/argo-cd/reposerver/cache"
+	"github.com/argoproj/argo-cd/reposerver/metrics"
+	cacheutil "github.com/argoproj/argo-cd/util/cache"
+	"github.com/argoproj/argo-cd/util/git"
+	gitmocks "github.com/argoproj/argo-cd/util/git/mocks"
+	"github.com/argoproj/argo-cd/util/helm"
+	helmmocks "github.com/argoproj/argo-cd/util/helm/mocks"
 )
 
 func newServiceWithMocks(root string) (*Service, *gitmocks.Client) {
@@ -220,7 +220,7 @@ func TestGenerateHelmWithValues(t *testing.T) {
 }
 
 // The requested value file (`../minio/values.yaml`) is outside the app path (`./util/helm/testdata/redis`), however
-// since the requested value is sill under the repo directory (`~/go/src/github.com/newrelic-forks/argo-cd`), it is allowed
+// since the requested value is sill under the repo directory (`~/go/src/github.com/argoproj/argo-cd`), it is allowed
 func TestGenerateHelmWithValuesDirectoryTraversal(t *testing.T) {
 	service := newService("../..")
 	_, err := service.GenerateManifest(context.Background(), &apiclient.ManifestRequest{
@@ -249,7 +249,7 @@ func TestGenerateHelmWithValuesDirectoryTraversal(t *testing.T) {
 }
 
 // This is a Helm first-class app with a values file inside the repo directory
-// (`~/go/src/github.com/newrelic-forks/argo-cd/reposerver/repository`), so it is allowed
+// (`~/go/src/github.com/argoproj/argo-cd/reposerver/repository`), so it is allowed
 func TestHelmManifestFromChartRepoWithValueFile(t *testing.T) {
 	service := newService(".")
 	source := &argoappv1.ApplicationSource{
@@ -273,7 +273,7 @@ func TestHelmManifestFromChartRepoWithValueFile(t *testing.T) {
 }
 
 // This is a Helm first-class app with a values file outside the repo directory
-// (`~/go/src/github.com/newrelic-forks/argo-cd/reposerver/repository`), so it is not allowed
+// (`~/go/src/github.com/argoproj/argo-cd/reposerver/repository`), so it is not allowed
 func TestHelmManifestFromChartRepoWithValueFileOutsideRepo(t *testing.T) {
 	service := newService(".")
 	source := &argoappv1.ApplicationSource{
@@ -306,7 +306,7 @@ func TestGenerateHelmWithURL(t *testing.T) {
 }
 
 // The requested value file (`../../../../../minio/values.yaml`) is outside the repo directory
-// (`~/go/src/github.com/newrelic-forks/argo-cd`), so it is blocked
+// (`~/go/src/github.com/argoproj/argo-cd`), so it is blocked
 func TestGenerateHelmWithValuesDirectoryTraversalOutsideRepo(t *testing.T) {
 	service := newService("../..")
 	_, err := service.GenerateManifest(context.Background(), &apiclient.ManifestRequest{
@@ -374,7 +374,7 @@ func TestGenerateHelmWithAbsoluteFileParameter(t *testing.T) {
 
 // The requested file parameter (`../external/external-secret.txt`) is outside the app path
 // (`./util/helm/testdata/redis`), however  since the requested value is sill under the repo
-// directory (`~/go/src/github.com/newrelic-forks/argo-cd`), it is allowed. It is used as a means of
+// directory (`~/go/src/github.com/argoproj/argo-cd`), it is allowed. It is used as a means of
 // providing direct content to a helm chart via a specific key.
 func TestGenerateHelmWithFileParameter(t *testing.T) {
 	service := newService("../..")

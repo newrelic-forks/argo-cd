@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/newrelic-forks/argo-cd/pkg/apis/application/v1alpha1"
-	appclientset "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned"
-	appclient "github.com/newrelic-forks/argo-cd/pkg/client/clientset/versioned/typed/application/v1alpha1"
-	"github.com/newrelic-forks/argo-cd/util/cli"
+	"github.com/argoproj/argo-cd/pkg/apis/application/v1alpha1"
+	appclientset "github.com/argoproj/argo-cd/pkg/client/clientset/versioned"
+	appclient "github.com/argoproj/argo-cd/pkg/client/clientset/versioned/typed/application/v1alpha1"
+	"github.com/argoproj/argo-cd/util/cli"
 
 	"github.com/argoproj/gitops-engine/pkg/diff"
 	"github.com/argoproj/gitops-engine/pkg/utils/errors"

@@ -18,14 +18,14 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/oauth2"
 
-	argocdclient "github.com/newrelic-forks/argo-cd/pkg/apiclient"
-	sessionpkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/session"
-	settingspkg "github.com/newrelic-forks/argo-cd/pkg/apiclient/settings"
-	"github.com/newrelic-forks/argo-cd/util/cli"
-	grpc_util "github.com/newrelic-forks/argo-cd/util/grpc"
-	"github.com/newrelic-forks/argo-cd/util/localconfig"
-	oidcutil "github.com/newrelic-forks/argo-cd/util/oidc"
-	"github.com/newrelic-forks/argo-cd/util/rand"
+	argocdclient "github.com/argoproj/argo-cd/pkg/apiclient"
+	sessionpkg "github.com/argoproj/argo-cd/pkg/apiclient/session"
+	settingspkg "github.com/argoproj/argo-cd/pkg/apiclient/settings"
+	"github.com/argoproj/argo-cd/util/cli"
+	grpc_util "github.com/argoproj/argo-cd/util/grpc"
+	"github.com/argoproj/argo-cd/util/localconfig"
+	oidcutil "github.com/argoproj/argo-cd/util/oidc"
+	"github.com/argoproj/argo-cd/util/rand"
 )
 
 // NewLoginCommand returns a new instance of `argocd login` command
