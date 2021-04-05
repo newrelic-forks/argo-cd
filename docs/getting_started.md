@@ -32,7 +32,7 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-ad
 
 ## 2. Download Argo CD CLI
 
-Download the latest Argo CD version from [https://github.com/argoproj/argo-cd/releases/latest](https://github.com/argoproj/argo-cd/releases/latest). More detailed installation instructions can be found via the [CLI installation documentation](cli_installation.md).
+Download the latest Argo CD version from [https://github.com/newrelic-forks/argo-cd/releases/latest](https://github.com/newrelic-forks/argo-cd/releases/latest). More detailed installation instructions can be found via the [CLI installation documentation](cli_installation.md).
 
 Also available in Mac Homebrew:
 

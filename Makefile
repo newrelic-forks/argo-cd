@@ -1,4 +1,4 @@
-PACKAGE=github.com/argoproj/argo-cd/common
+PACKAGE=github.com/newrelic-forks/argo-cd/common
 CURRENT_DIR=$(shell pwd)
 DIST_DIR=${CURRENT_DIR}/dist
 CLI_NAME=argocd
@@ -15,7 +15,7 @@ GOPATH?=$(shell if test -x `which go`; then go env GOPATH; else echo "$(HOME)/go
 GOCACHE?=$(HOME)/.cache/go-build
 
 DOCKER_SRCDIR?=$(GOPATH)/src
-DOCKER_WORKDIR?=/go/src/github.com/argoproj/argo-cd
+DOCKER_WORKDIR?=/go/src/github.com/newrelic-forks/argo-cd
 
 ARGOCD_PROCFILE?=Procfile
 

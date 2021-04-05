@@ -1,6 +1,6 @@
 # Installation
 
-You can download the latest Argo CD version from [the latest release page of this repository](https://github.com/argoproj/argo-cd/releases/latest), which will include the `argocd` CLI.
+You can download the latest Argo CD version from [the latest release page of this repository](https://github.com/newrelic-forks/argo-cd/releases/latest), which will include the `argocd` CLI.
 
 ## Linux
 
@@ -13,7 +13,7 @@ VERSION=$(curl --silent "https://api.github.com/repos/argoproj/argo-cd/releases/
 Replace `VERSION` in the command below with the version of Argo CD you would like to download:
 
 ```bash
-curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/$VERSION/argocd-linux-amd64
+curl -sSL -o /usr/local/bin/argocd https://github.com/newrelic-forks/argo-cd/releases/download/$VERSION/argocd-linux-amd64
 ```
 
 Make the `argocd` CLI executable:
@@ -44,7 +44,7 @@ VERSION=$(curl --silent "https://api.github.com/repos/argoproj/argo-cd/releases/
 Replace `VERSION` in the command below with the version of Argo CD you would like to download:
 
 ```bash
-curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/$VERSION/argocd-darwin-amd64
+curl -sSL -o /usr/local/bin/argocd https://github.com/newrelic-forks/argo-cd/releases/download/$VERSION/argocd-darwin-amd64
 ```
 
 Make the `argocd` CLI executable:

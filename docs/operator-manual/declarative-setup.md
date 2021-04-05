@@ -593,13 +593,13 @@ Notes:
 ## Manage Argo CD Using Argo CD
 
 Argo CD is able to manage itself since all settings are represented by Kubernetes manifests. The suggested way is to create [Kustomize](https://github.com/kubernetes-sigs/kustomize)
-based application which uses base Argo CD manifests from [https://github.com/argoproj/argo-cd](https://github.com/argoproj/argo-cd/tree/stable/manifests) and apply required changes on top.
+based application which uses base Argo CD manifests from [https://github.com/newrelic-forks/argo-cd](https://github.com/newrelic-forks/argo-cd/tree/stable/manifests) and apply required changes on top.
 
 Example of `kustomization.yaml`:
 
 ```yaml
 bases:
-- github.com/argoproj/argo-cd//manifests/cluster-install?ref=v1.0.1
+- github.com/newrelic-forks/argo-cd//manifests/cluster-install?ref=v1.0.1
 
 # additional resources like ingress rules, cluster and repository secrets.
 resources:

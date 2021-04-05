@@ -34,5 +34,5 @@ Otherwise it is assumed to be a plain **directory** application.
 
 ## References
 
-* [reposerver/repository/repository.go/GetAppSourceType](https://github.com/argoproj/argo-cd/blob/master/reposerver/repository/repository.go#L286)
-* [server/repository/repository.go/listAppTypes](https://github.com/argoproj/argo-cd/blob/master/server/repository/repository.go#L97)
+* [reposerver/repository/repository.go/GetAppSourceType](https://github.com/newrelic-forks/argo-cd/blob/master/reposerver/repository/repository.go#L286)
+* [server/repository/repository.go/listAppTypes](https://github.com/newrelic-forks/argo-cd/blob/master/server/repository/repository.go#L97)

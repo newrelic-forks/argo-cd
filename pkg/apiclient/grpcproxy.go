@@ -2,7 +2,6 @@ package apiclient
 
 import (
 	"bytes"
-	"crypto/tls"
 	"encoding/binary"
 	"fmt"
 	"io"
@@ -19,7 +18,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/util/rand"
+	"github.com/newrelic-forks/argo-cd/util/rand"
 )
 
 const (

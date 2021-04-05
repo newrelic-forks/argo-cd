@@ -247,9 +247,9 @@ Please refer to the [Operator Manual](../../operator-manual/declarative-setup/#r
 
 > Before v1.2
 
-We do not currently have first-class support for this. See [#1513](https://github.com/argoproj/argo-cd/issues/1513).
+We do not currently have first-class support for this. See [#1513](https://github.com/newrelic-forks/argo-cd/issues/1513).
 
-As a work-around, you can customize your Argo CD image. See [#1344](https://github.com/argoproj/argo-cd/issues/1344#issuecomment-479811810)
+As a work-around, you can customize your Argo CD image. See [#1344](https://github.com/newrelic-forks/argo-cd/issues/1344#issuecomment-479811810)
 
 ## Unknown SSH Hosts
 
@@ -335,11 +335,11 @@ You can also manage SSH known hosts entries in a declarative, self-managed ArgoC
 > Before v1.2
 
  
-(1) You can customize the Argo CD Docker image by adding the host's SSH public key to `/etc/ssh/ssh_known_hosts`. Additional entries to this file can be generated using the `ssh-keyscan` utility (e.g. `ssh-keyscan your-private-git-server.com`. For more information see [example](https://github.com/argoproj/argo-cd/tree/master/examples/known-hosts) which demonstrates how `/etc/ssh/ssh_known_hosts` can be customized.
+(1) You can customize the Argo CD Docker image by adding the host's SSH public key to `/etc/ssh/ssh_known_hosts`. Additional entries to this file can be generated using the `ssh-keyscan` utility (e.g. `ssh-keyscan your-private-git-server.com`. For more information see [example](https://github.com/newrelic-forks/argo-cd/tree/master/examples/known-hosts) which demonstrates how `/etc/ssh/ssh_known_hosts` can be customized.
 
 !!! note
     The `/etc/ssh/ssh_known_hosts` should include Git host on each Argo CD deployment as well as on a computer where `argocd repo add` is executed. After resolving issue
-    [#1514](https://github.com/argoproj/argo-cd/issues/1514) only `argocd-repo-server` deployment has to be customized.
+    [#1514](https://github.com/newrelic-forks/argo-cd/issues/1514) only `argocd-repo-server` deployment has to be customized.
 
 (1) Add repository using Argo CD CLI and `--insecure-ignore-host-key` flag:
 
@@ -351,7 +351,7 @@ argocd repo add git@github.com:argoproj/argocd-example-apps.git --ssh-private-ke
     The `--insecure-ignore-host-key` should not be used in production as this is subject to man-in-the-middle attacks. 
 
 !!! warning "This does not work for Kustomize remote bases or custom plugins"
-    For Kustomize support, see [#827](https://github.com/argoproj/argo-cd/issues/827).
+    For Kustomize support, see [#827](https://github.com/newrelic-forks/argo-cd/issues/827).
 
 ## Git Submodules
 

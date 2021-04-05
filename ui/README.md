@@ -1,8 +1,8 @@
 # Argo CD UI
 
-<img src="https://github.com/argoproj/argo-cd/blob/master/ui/src/assets/images/argo.png?raw=true" alt="Argo Image" width="600" />
+<img src="https://github.com/newrelic-forks/argo-cd/blob/master/ui/src/assets/images/argo.png?raw=true" alt="Argo Image" width="600" />
 
-Web UI for [Argo CD](https://github.com/argoproj/argo-cd).
+Web UI for [Argo CD](https://github.com/newrelic-forks/argo-cd).
 
 
 ## Getting started
