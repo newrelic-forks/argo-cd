@@ -117,7 +117,7 @@ func (c *client) startGRPCProxy() (*grpc.Server, net.Listener, error) {
 				return fmt.Errorf("Unable to get method name from stream context.")
 			}
 			msg := make([]byte, 0)
-			err = stream.RecvMsg(&msg)
+			err := stream.RecvMsg(&msg)
 			if err != nil {
 				return err
 			}
@@ -174,6 +174,7 @@ func (c *client) startGRPCProxy() (*grpc.Server, net.Listener, error) {
 			}
 		}))
 	go func() {
+		fmt.Println("serving ...")
 		err := proxySrv.Serve(ln)
 		argocderrors.CheckError(err)
 	}()
