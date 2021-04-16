@@ -78,11 +78,6 @@ func (c *client) executeRequest(fullMethodName string, msg []byte, md metadata.M
 	}
 	req.Header.Set("content-type", "application/grpc-web+proto")
 
-	// client := &http.Client{Transport: &http.Transport{
-	// 	TLSClientConfig: &tls.Config{InsecureSkipVerify: c.Insecure},
-	// }}
-
-	// resp, err := client.Do(req)
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
 		return nil, err
@@ -174,7 +169,6 @@ func (c *client) startGRPCProxy() (*grpc.Server, net.Listener, error) {
 			}
 		}))
 	go func() {
-		fmt.Println("serving ...")
 		err := proxySrv.Serve(ln)
 		argocderrors.CheckError(err)
 	}()
